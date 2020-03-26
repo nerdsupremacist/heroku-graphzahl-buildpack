@@ -30,10 +30,6 @@ else
   puts-step "Using Swift $SWIFT_VERSION (default)"
 fi
 
-if [ -f "$ENV_DIR/SWIFT_BUILD_CONFIGURATION" ]; then
-  SWIFT_BUILD_CONFIGURATION=`cat "$ENV_DIR/SWIFT_BUILD_CONFIGURATION"`
-fi
-
 if [ -f "$ENV_DIR/SWIFT_BUILD_FLAGS" ]; then
   SWIFT_BUILD_FLAGS=`cat "$ENV_DIR/SWIFT_BUILD_FLAGS"`
 fi
