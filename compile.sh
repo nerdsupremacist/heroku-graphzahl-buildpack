@@ -4,7 +4,7 @@ echo " ---> Installing required packages"
 apt-get -y install libssl-dev
 apt-get -y install libz-dev
 
-echo " ---> Detecting Namge of Executable"
+echo " ---> Detecting Name of Executable"
 export PACKAGE_JSON=$(swift package dump-package)
 export EXECUTABLE_NAME=$(curl -fsSL https://raw.githubusercontent.com/nerdsupremacist/heroku-graphzahl-buildpack/master/executableName.swift | swift -)
 echo " ---> Detected executable: `$EXECUTABLE_NAME`"
