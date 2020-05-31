@@ -8,6 +8,7 @@ export EXECUTABLE_NAME=$(PACKAGE_JSON=$PACKAGE_JSON swift $(curl -fsSL https://r
 rm executableName.swift
 
 export EXECUTABLE_PATH=$(swift build -c release --show-bin-path)/$EXECUTABLE_NAME
+echo $EXECUTABLE_PATH
 
 swift package clean
 swift build -c debug -Xlinker -E
