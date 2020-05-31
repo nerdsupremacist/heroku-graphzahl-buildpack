@@ -9,7 +9,7 @@ struct Package: Codable {
     let products: [Product]
 }
 
-guard let data = ProcessInfo.processInfo.environment["JSON_PACKAGE"]?.data(using: .utf8) else {
+guard let data = ProcessInfo.processInfo.environment["PACKAGE_JSON"]?.data(using: .utf8) else {
     fatalError("JSON Representation of Package was not delivered")
 }
 let decoded = try JSONDecoder().decode(Package.self, from: data)
