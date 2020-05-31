@@ -15,3 +15,5 @@ echo " ---> Detected executable: `$EXECUTABLE_NAME`"
 
 export EXECUTABLE_PATH=$(swift build -c debug --show-bin-path)/$EXECUTABLE_NAME
 echo " ---> Will run application from: `$EXECUTABLE_PATH`"
+
+ln -s $EXECUTABLE_PATH compiled
