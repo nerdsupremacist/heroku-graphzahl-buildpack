@@ -8,8 +8,3 @@ eval "$(swiftenv init -)"
 # Install Swift
 puts-step Installing Swift $SWIFT_VERSION
 swiftenv install $SWIFT_VERSION -s
-
-apt-get -y update
-apt-get -y install libssl-dev
-apt-get -y install libz-dev
-apt-get -y install sqlite3 libsqlite3-dev
