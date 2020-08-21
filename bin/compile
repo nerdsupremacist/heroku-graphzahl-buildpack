@@ -50,8 +50,8 @@ source "$BIN_DIR/steps/hooks/pre_compile"
 source "$BIN_DIR/steps/ssh"
 source "$BIN_DIR/steps/swift-build"
 if [[ -z "$RUN_TESTS" ]]; then
-  source "$BIN_DIR/steps/swift-install"
-fi
+  # source "$BIN_DIR/steps/swift-install"
+file
 
 # Setup application environment
 mkdir -p $BUILD_DIR/.profile.d
