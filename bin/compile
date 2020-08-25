@@ -51,7 +51,7 @@ source "$BIN_DIR/steps/ssh"
 source "$BIN_DIR/steps/swift-build"
 if [[ -z "$RUN_TESTS" ]]; then
   source "$BIN_DIR/steps/swift-install"
-file
+fi
 
 # Setup application environment
 mkdir -p $BUILD_DIR/.profile.d
